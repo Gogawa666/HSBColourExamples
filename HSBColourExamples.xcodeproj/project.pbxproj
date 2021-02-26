@@ -13,6 +13,7 @@
 		81A1AAF825E92CD200A6313B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A1AAF725E92CD200A6313B /* Preview Assets.xcassets */; };
 		81A1AB0525E9303C00A6313B /* SimpleListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1AB0425E9303C00A6313B /* SimpleListItemView.swift */; };
 		81A1AB0825E9308600A6313B /* MonochromaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1AB0725E9308600A6313B /* MonochromaticView.swift */; };
+		81A1AB0E25E937AF00A6313B /* ComplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1AB0D25E937AF00A6313B /* ComplementaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		81A1AAF925E92CD200A6313B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81A1AB0425E9303C00A6313B /* SimpleListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleListItemView.swift; sourceTree = "<group>"; };
 		81A1AB0725E9308600A6313B /* MonochromaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonochromaticView.swift; sourceTree = "<group>"; };
+		81A1AB0D25E937AF00A6313B /* ComplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplementaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				81A1AAF225E92CD100A6313B /* ContentView.swift */,
 				81A1AB0725E9308600A6313B /* MonochromaticView.swift */,
+				81A1AB0D25E937AF00A6313B /* ComplementaryView.swift */,
 				81A1AB0225E9301C00A6313B /* External */,
 			);
 			path = Views;
@@ -162,6 +165,7 @@
 			files = (
 				81A1AB0825E9308600A6313B /* MonochromaticView.swift in Sources */,
 				81A1AAF325E92CD100A6313B /* ContentView.swift in Sources */,
+				81A1AB0E25E937AF00A6313B /* ComplementaryView.swift in Sources */,
 				81A1AAF125E92CD100A6313B /* HSBColourExamplesApp.swift in Sources */,
 				81A1AB0525E9303C00A6313B /* SimpleListItemView.swift in Sources */,
 			);

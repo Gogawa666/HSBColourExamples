@@ -20,6 +20,13 @@ struct ContentView: View {
 
                 }
 
+                NavigationLink(destination: ComplementaryView()) {
+                    
+                    SimpleListItemView(title: "Complementary colour",
+                                       caption: "Two colours across the colour wheel...")
+
+                }
+
             }
                         
         }
@@ -31,6 +38,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationView {
+            ContentView()
+        }
     }
 }
