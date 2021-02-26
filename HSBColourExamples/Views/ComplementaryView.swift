@@ -19,7 +19,7 @@ struct ComplementaryView: View {
     // Retruns an equivalent value to complementaryHue, but within the range of 0 to 360 degrees
     // e.g.: 380 degrees is changed to 20 degress
     var normalizedComplementaryHue: Double {
-        return (hue + 180.0).truncatingRemainder(dividingBy: 360.0)
+        return complementaryHue.truncatingRemainder(dividingBy: 360.0)
     }
 
     var body: some View {
