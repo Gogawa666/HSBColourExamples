@@ -11,25 +11,37 @@ struct ContentView: View {
     var body: some View {
         List {
 
-            Section(header: Text("Basic Examples")) {
+            Section(header: Text("Static Example")) {
+
+                NavigationLink(destination: StaticView()) {
+                    
+                    SimpleListItemView(title: "HSB Colour Model Overview",
+                                       caption: "How the HSB colour model works, overall.")
+
+                }
+
+            }
+
+            
+            Section(header: Text("Interactive Examples")) {
 
                 NavigationLink(destination: MonochromaticView()) {
                     
-                    SimpleListItemView(title: "Monochromatic colour",
+                    SimpleListItemView(title: "Monochromatic Colour",
                                        caption: "Varying the hue but no other values.")
 
                 }
 
                 NavigationLink(destination: ComplementaryView()) {
                     
-                    SimpleListItemView(title: "Complementary colour",
+                    SimpleListItemView(title: "Complementary Colour",
                                        caption: "Two hues across the colour wheel.")
 
                 }
 
                 NavigationLink(destination: TriadicView()) {
                     
-                    SimpleListItemView(title: "Triadic colour",
+                    SimpleListItemView(title: "Triadic Colour",
                                        caption: "Three hues forming a triangle.")
 
                 }
