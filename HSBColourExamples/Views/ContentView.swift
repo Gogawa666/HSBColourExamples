@@ -23,10 +23,16 @@ struct ContentView: View {
                 NavigationLink(destination: ComplementaryView()) {
                     
                     SimpleListItemView(title: "Complementary colour",
-                                       caption: "Two colours across the colour wheel...")
+                                       caption: "Two hues across the colour wheel.")
 
                 }
 
+                NavigationLink(destination: TriadicView()) {
+                    
+                    SimpleListItemView(title: "Triadic colour",
+                                       caption: "Three hues forming a triangle.")
+
+                }
             }
                         
         }
