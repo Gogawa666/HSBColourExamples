@@ -19,12 +19,21 @@ struct MonochromaticView: View {
 
                 Try changing the hue using the slider.
                 """)
-            
+                // This Text view will respect the proposed horizontal space
+                // and take as much vertical space as needed.
+                // See: https://fivestars.blog/swiftui/trucated-text.html
+                .fixedSize(horizontal: false, vertical: true)
+
             Slider(value: $hue, in: 0...360.0, step: 1.0)
             
             Text("Hue:")
-            Text("\(String(format: "%3.0f", hue))°")
+                .font(.title3)
+                .bold()
+                .padding(.bottom, 5)
             
+            Text("\(String(format: "%3.0f", hue))°")
+                .padding(.bottom, 15)
+
             HStack(spacing: 0) {
                 Rectangle()
                     .frame(width: 100, height: 100)
@@ -60,6 +69,8 @@ struct MonochromaticView: View {
 
 struct MonochromaticView_Previews: PreviewProvider {
     static var previews: some View {
-        MonochromaticView()
+        NavigationView {
+            MonochromaticView()
+        }
     }
 }
