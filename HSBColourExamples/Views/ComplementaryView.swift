@@ -28,7 +28,7 @@ struct ComplementaryView: View {
             Text("""
                 Complementary colours are directly across from one another on the colour wheel.
 
-                Try changing the hue using the slider.
+                Try changing the base hue using the slider.
                 """)
                 .fixedSize(horizontal: false, vertical: true)
 
