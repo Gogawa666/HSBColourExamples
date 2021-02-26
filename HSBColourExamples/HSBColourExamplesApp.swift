@@ -14,6 +14,7 @@ struct HSBColourExamplesApp: App {
             
             NavigationView {
                 ContentView()
+                    .preferredColorScheme(.light)
             }
             
         }

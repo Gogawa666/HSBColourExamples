@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ComplementaryView: View {
     
-    @State private var hue: Double = 0.0
+    @State private var hue: Double = 60.0
     
     // Returns a value directly across the colour wheel from the base hue
     var complementaryHue: Double {
@@ -75,6 +75,11 @@ struct ComplementaryView: View {
                     .foregroundColor(Color(hue: normalizedComplementaryHue / 360.0, saturation: 0.8, brightness: 0.9, opacity: 1.0))
                 
             }
+            
+            Image("Complementary")
+                .resizable()
+                .scaledToFit()
+                .padding(.top, 20)
             
             Spacer()
 
