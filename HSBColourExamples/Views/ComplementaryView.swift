@@ -11,15 +11,9 @@ struct ComplementaryView: View {
     
     @State private var hue: Double = 60.0
     
-    // Returns a value directly across the colour wheel from the base hue
-    var complementaryHue: Double {
-        return hue + 180.0
-    }
-
-    // Retruns an equivalent value to complementaryHue, but within the range of 0 to 360 degrees
-    // e.g.: 380 degrees is changed to 20 degress
-    var normalizedComplementaryHue: Double {
-        return complementaryHue.truncatingRemainder(dividingBy: 360.0)
+    // Second hue to form a triad
+    var complementary: Hue {
+        return Hue(base: hue, offset: 180)
     }
 
     var body: some View {
@@ -51,7 +45,7 @@ struct ComplementaryView: View {
                     .bold()
                     .padding(.bottom, 5)
                 
-                Text("\(String(format: "%3.0f", complementaryHue))°")
+                Text("\(String(format: "%3.0f", complementary.relative))°")
                     .padding(.bottom, 15)
             }
             
@@ -61,7 +55,7 @@ struct ComplementaryView: View {
                     .bold()
                     .padding(.bottom, 5)
                 
-                Text("\(String(format: "%3.0f", normalizedComplementaryHue))°")
+                Text("\(String(format: "%3.0f", complementary.normalized))°")
                     .padding(.bottom, 15)
             }
             
@@ -72,7 +66,7 @@ struct ComplementaryView: View {
 
                 Rectangle()
                     .frame(width: 100, height: 100)
-                    .foregroundColor(Color(hue: normalizedComplementaryHue / 360.0, saturation: 0.8, brightness: 0.9, opacity: 1.0))
+                    .foregroundColor(Color(hue: complementary.normalized / 360.0, saturation: 0.8, brightness: 0.9, opacity: 1.0))
                 
             }
             

@@ -15,6 +15,7 @@
 		81A1AB0825E9308600A6313B /* MonochromaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1AB0725E9308600A6313B /* MonochromaticView.swift */; };
 		81A1AB0E25E937AF00A6313B /* ComplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1AB0D25E937AF00A6313B /* ComplementaryView.swift */; };
 		81A1AB1525E93C6300A6313B /* TriadicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1AB1425E93C6300A6313B /* TriadicView.swift */; };
+		81A1AB1A25E940CE00A6313B /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1AB1925E940CE00A6313B /* Hue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		81A1AB0725E9308600A6313B /* MonochromaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonochromaticView.swift; sourceTree = "<group>"; };
 		81A1AB0D25E937AF00A6313B /* ComplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplementaryView.swift; sourceTree = "<group>"; };
 		81A1AB1425E93C6300A6313B /* TriadicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriadicView.swift; sourceTree = "<group>"; };
+		81A1AB1925E940CE00A6313B /* Hue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				81A1AAF025E92CD100A6313B /* HSBColourExamplesApp.swift */,
 				81A1AB0125E9300200A6313B /* Views */,
+				81A1AB1825E940BB00A6313B /* Model */,
 				81A1AAF425E92CD200A6313B /* Assets.xcassets */,
 				81A1AAF925E92CD200A6313B /* Info.plist */,
 				81A1AAF625E92CD200A6313B /* Preview Content */,
@@ -95,6 +98,14 @@
 				81A1AB0425E9303C00A6313B /* SimpleListItemView.swift */,
 			);
 			path = External;
+			sourceTree = "<group>";
+		};
+		81A1AB1825E940BB00A6313B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81A1AB1925E940CE00A6313B /* Hue.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81A1AB0825E9308600A6313B /* MonochromaticView.swift in Sources */,
+				81A1AB1A25E940CE00A6313B /* Hue.swift in Sources */,
 				81A1AAF325E92CD100A6313B /* ContentView.swift in Sources */,
 				81A1AB0E25E937AF00A6313B /* ComplementaryView.swift in Sources */,
 				81A1AAF125E92CD100A6313B /* HSBColourExamplesApp.swift in Sources */,

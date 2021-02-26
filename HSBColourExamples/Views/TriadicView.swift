@@ -12,13 +12,13 @@ struct TriadicView: View {
     @State private var hue: Double = 80.0
     
     // Second hue to form a triad
-    var secondHue: (relative: Double, normalized: Double) {
-        return relativeHue(to: hue, increasedBy: 120)
+    var secondHue: Hue {
+        return Hue(base: hue, offset: 120)
     }
 
     // Third hue to form a triad
-    var thirdHue: (relative: Double, normalized: Double) {
-        return relativeHue(to: hue, increasedBy: 240)
+    var thirdHue: Hue {
+        return Hue(base: hue, offset: 240)
     }
     
     var body: some View {
@@ -111,14 +111,6 @@ struct TriadicView: View {
 
     }
     
-    // Returns a hue relative to the base hue, and an equivalent normalized value (between 0 and 360)
-    func relativeHue(to hue: Double, increasedBy offset: Double) -> (relative: Double, normalized: Double) {
-        
-        let relativeHue = hue + offset
-        
-        return (relativeHue, relativeHue.truncatingRemainder(dividingBy: 360.0))
-        
-    }
 }
 
 struct TriadicView_Previews: PreviewProvider {
