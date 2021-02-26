@@ -17,6 +17,7 @@
 		81A1AB1525E93C6300A6313B /* TriadicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1AB1425E93C6300A6313B /* TriadicView.swift */; };
 		81A1AB1A25E940CE00A6313B /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1AB1925E940CE00A6313B /* Hue.swift */; };
 		81A1AB1F25E942E600A6313B /* StaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1AB1E25E942E600A6313B /* StaticView.swift */; };
+		81A1AB2225E9446600A6313B /* AnalogousView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1AB2125E9446600A6313B /* AnalogousView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		81A1AB1425E93C6300A6313B /* TriadicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriadicView.swift; sourceTree = "<group>"; };
 		81A1AB1925E940CE00A6313B /* Hue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hue.swift; sourceTree = "<group>"; };
 		81A1AB1E25E942E600A6313B /* StaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticView.swift; sourceTree = "<group>"; };
+		81A1AB2125E9446600A6313B /* AnalogousView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogousView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				81A1AB0725E9308600A6313B /* MonochromaticView.swift */,
 				81A1AB0D25E937AF00A6313B /* ComplementaryView.swift */,
 				81A1AB1425E93C6300A6313B /* TriadicView.swift */,
+				81A1AB2125E9446600A6313B /* AnalogousView.swift */,
 			);
 			path = Interactive;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81A1AB2225E9446600A6313B /* AnalogousView.swift in Sources */,
 				81A1AB0825E9308600A6313B /* MonochromaticView.swift in Sources */,
 				81A1AB1A25E940CE00A6313B /* Hue.swift in Sources */,
 				81A1AAF325E92CD100A6313B /* ContentView.swift in Sources */,

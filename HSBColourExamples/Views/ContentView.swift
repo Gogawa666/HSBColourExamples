@@ -45,6 +45,13 @@ struct ContentView: View {
                                        caption: "Three hues forming a triangle.")
 
                 }
+                
+                NavigationLink(destination: AnalogousView()) {
+                    
+                    SimpleListItemView(title: "Analogous Colour",
+                                       caption: "Three hues, close to one another on the wheel.")
+
+                }
             }
                         
         }
